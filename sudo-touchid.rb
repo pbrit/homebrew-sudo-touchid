@@ -20,8 +20,8 @@ class SudoTouchid < Formula
   def caveats; <<-EOS.undent
         sudo requires appropriate owner and mode: 
 
-        sudo chown root:wheel #{opt_prefix}/bin/sudo
-        sudo chmod 4755 #{opt_prefix}/bin/sudo
+        /usr/bin/sudo chown root:wheel #{opt_prefix}/bin/sudo
+        /usr/bin/sudo chmod 4755 #{opt_prefix}/bin/sudo
 
         You can also set up your PATH by adding export PATH=#{opt_prefix}/bin:$PATH to .bashrc
     EOS
