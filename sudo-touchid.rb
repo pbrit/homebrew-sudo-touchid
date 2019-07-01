@@ -17,7 +17,7 @@ class SudoTouchid < Formula
     bin.install 'build/Release/sudo'
   end
 
-  def caveats; <<-EOS.undent
+  def caveats; <<-EOS
         sudo requires appropriate owner and mode: 
 
         /usr/bin/sudo chown root:wheel #{opt_prefix}/bin/sudo
